@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * _puts -  prints a string
+ * @str : a string
  * Discription: a function that prints a string, followed by a new line
  *
  * OCT 10th 2023
