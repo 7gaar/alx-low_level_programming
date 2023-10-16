@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * int-strlen - a function that returns the length of a string.
  * @s: string that its length wil be found
