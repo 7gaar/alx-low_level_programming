@@ -2,7 +2,7 @@
 /**
  * print_rev - reverses the string
  * @s - string
- * Discription: a function that prints a string, in reverse, followed by a new line.
+ * Discription: prints a string, in reverse, followed by a new line.
  *
  * 0CT 16th
  * Ahmad Ali
