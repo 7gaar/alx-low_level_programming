@@ -1,0 +1,16 @@
+#include <stfio.h>
+/**
+ * swap_int: a function that swaps the values of two integers.
+ *
+ * OCT 10th 2023
+ * Ahmad Ali
+ *
+ * Return: Always 0.
+ */
+void swap_int(int *a, int *b);
+{
+	int l;
+	f = *a;
+	*a = *b;
+	*b = l;
+}
