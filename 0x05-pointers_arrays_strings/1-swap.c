@@ -1,10 +1,8 @@
 #include <stdio.h>
 /**
- * main - Write a function that swaps the values of two integers.
- *
  * swap_int - a function that swaps the values of two integers.
- * @a: a variable that will be updated
- * @b: a variable that will be updated
+ * @a: first variable
+ * @b: second variable
  *
  * OCT 10th 2023
  * Ahmad Ali
