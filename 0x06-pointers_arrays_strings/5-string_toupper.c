@@ -5,8 +5,8 @@
  * to uppercase
  * @s: string to modify
  *
- * OCT 19th 23 
- * Ahmad Ali 
+ * OCT 19th 23
+ * Ahmad Ali
  *
  * Return: resulting string
  */
