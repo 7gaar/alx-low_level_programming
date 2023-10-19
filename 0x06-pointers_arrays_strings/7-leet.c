@@ -12,15 +12,15 @@
 char *leet(char *s)
 {
 	int k, l;
-	char m[] = "aAeEoOtTlL";
-	char n[] = "4433007711";
+	char n[] = "aAeEoOtTlL";
+	char m[] = "4433007711";
 
 	for (k = 0; *(s + k); k++)
 	{
 		for (l = 0; l <= 9; l++)
 		{
-			if (a[l] == s[k])
-				s[k] = b[l];
+			if (n[l] == s[k])
+				s[k] = m[l];
 		}
 	}
 	return (s);
