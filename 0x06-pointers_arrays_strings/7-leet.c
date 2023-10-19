@@ -4,25 +4,22 @@
  * leet - encodes a string in 1337
  * @s: string to be encoded
  *
- * OCT 19th 23
- * Ahmad Ali
- *
  * Return: the resulting string;
  */
 char *leet(char *s)
 {
-	int k, l;
+	int i, j;
 
-	char *n = "aAeEoOtTlL";
-	char *m = "4433007711";
+	char *a = "aAeEoOtTlL";
+	char *b = "4433007711";
 
-	for (k = 0; s[k] != '\0'; k++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		for (l = 0; l < 10; l++)
+		for (j = 0; j < 10; j++)
 		{
-			if (s[k] == a[l])
+			if (s[i] == a[j])
 			{
-				s[k] = b[l];
+				s[i] = b[j];
 			}
 		}
 	}
