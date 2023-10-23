@@ -2,14 +2,15 @@
 /**
  * Discription - a function that fills memory with constant byte.
  *
+ * *_memset - fills memory with a constant byte
  * @s: string with constant byte
- * @n: bytes of memory 
+ * @n: bytes of memory
  * @b: memory area pointer
  *
  * OCT 23th 23
  * Ahmad Ali
  *
- * Return: a pointer to the memory area 
+ * Return: a pointer to the memory area s
  */
 char *_memset(char *s, char b, unsigned int n)
 {
