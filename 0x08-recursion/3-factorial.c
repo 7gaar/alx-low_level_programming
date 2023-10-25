@@ -6,10 +6,15 @@
  *
  * OCT 25TH 23
  * Ahmed Ali
- */ 
+ *
+ * Return: returns the factorial of a positive num, if n = 0 it returns 1
+ * if n < 0 it returns -1
+ */
 int factorial(int n)
 {
-	if (n <= 1)
+	if (n < 0)
+		return (-1);
+	if (n == 0)
 		return (1);
 	return (n * factorial(n - 1));
-}	
+}
