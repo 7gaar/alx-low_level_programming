@@ -9,31 +9,26 @@
  *
  * Return: square root of @n
  */
+
 int _sqrt_recursion(int n)
+{
+	return (_sqrt(n, 1));
+}
+
+/**
+ * _sqrt - _sqrt_recursion:wq
+ *
+ * @n: integer paramtr
+ * @l: integer parameter
+ * Return: square root
+ */
+int _sqrt(int n, int l)
 {
 	if (n < 0)
 		return (-1);
-	if (n == 0 || n == 1)
-		return (n);
-	int low = 0;
-	int high = n;
-
-	while (low <= high)
-	{
-		int mid = (low + high) / 2;
-
-		if (mid * mid == n)
-		{
-			return (mid);
-		}
-		else if (mid * mid < n)
-		{
-			low = mid + 1;
-		}
-		else
-		{
-			high = mid - 1;
-		}
-	}
-	return (-1);
+	if ((l * l) > n)
+		return (-1);
+	if (l * l == n)
+		return (l);
+	return (_sqrt(n, l + 1));
 }
