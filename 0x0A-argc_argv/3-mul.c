@@ -5,45 +5,45 @@
  * _atoi - converts a string to an integer
  * @s: string to be converted
  *
- * OCT 27th 23
+ * Oct 27th 23
  * Ahmed Ali
  *
  * Return: the int converted from the string
  */
 int _atoi(char *s)
 {
-	int i, j, k, len, m, digit;
+	int i, d, n, len, f, digit;
 
 	i = 0;
-	j = 0;
-	k = 0;
+	d = 0;
+	n = 0;
 	len = 0;
-	m = 0;
+	f = 0;
 	digit = 0;
 
 	while (s[len] != '\0')
 		len++;
 
-	while (i < len && m == 0)
+	while (i < len && f == 0)
 	{
 		if (s[i] == '-')
-			++j;
+			++d;
 
 		if (s[i] >= '0' && s[i] <= '9')
 		{
 			digit = s[i] - '0';
-			if (j % 2)
+			if (d % 2)
 				digit = -digit;
-			k = k * 10 + digit;
-			m = 1;
+			n = n * 10 + digit;
+			f = 1;
 			if (s[i + 1] < '0' || s[i + 1] > '9')
 				break;
-			m = 0;
+			f = 0;
 		}
 		i++;
 	}
 
-	if (m == 0)
+	if (f == 0)
 		return (0);
 
 	return (n);
@@ -58,7 +58,7 @@ int _atoi(char *s)
  */
 int main(int argc, char *argv[])
 {
-	int res, number1, number2;
+	int result, num1, num2;
 
 	if (argc < 3 || argc > 3)
 	{
@@ -66,11 +66,11 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	number1 = _atoi(argv[1]);
-	number2 = _atoi(argv[2]);
-	res = number1 * number2;
+	num1 = _atoi(argv[1]);
+	num2 = _atoi(argv[2]);
+	result = num1 * num2;
 
-	printf("%d\n", res);
+	printf("%d\n", result);
 
 	return (0);
 }
