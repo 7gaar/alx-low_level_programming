@@ -31,7 +31,7 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		exit(99);
 	}
-	if ((*choice == '\0' && num2 == 0) || (*choice == '%' && num2 == 0))
+	if ((*choice == '/' && num2 == 0) || (*choice == '%' && num2 == 0))
 	{
 		printf("Error\n");
 		exit(100);
