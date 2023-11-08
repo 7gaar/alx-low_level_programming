@@ -25,7 +25,6 @@ int main(int argc, char **argv)
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
 	choice = argv[2];
-	
 
 	if (get_op_func(choice) == NULL || choice[1] != '\0')
 	{
@@ -37,8 +36,6 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		exit(100);
 		}
-	
-
 	result = get_op_func(choice)(num1, num2);
 	printf("%d\n", result);
 	return (0);
