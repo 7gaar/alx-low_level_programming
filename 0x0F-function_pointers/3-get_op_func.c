@@ -1,5 +1,5 @@
 #include "3-calc.h"
-
+#include <stdlib.h>
 /**
  * get_op_func - a function that selects the correct function
  * @s: operator passed as arg
@@ -15,7 +15,7 @@ int (*get_op_func(char *s))(int, int)
 			{"*", op_mul},
 			{"/", op_div},
 			{"%", op_mod},
-			{0, 0}
+			{NULL, NULL}
 			};
 			int i = 0;
 

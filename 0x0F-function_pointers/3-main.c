@@ -27,13 +27,12 @@ int main(int argc, char **argv)
 	choice = argv[2];
 	
 
-	if (*argv[2] != '+' || *argv[2] != '-' || *argv[2] != '*'
-	|| *argv[2] != '/' || *argv[2] != '%')
+	if (get_op_func(choice) == NULL || choice[1] != '\0')
 	{
 		printf("Error\n");
 		exit(99);
 	}
-	if (num2 == 0)
+	if ((*choice == '\0' && num2 == 0) || (*choice == '%' && num2 == 0))
 	{
 		printf("Error\n");
 		exit(100);
