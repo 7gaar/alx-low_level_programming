@@ -1,24 +1,42 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 
-int main(int argc, char* argv[]) {
-  if (argc != 2) {
-    printf("Error\n");
-    exit(1);
-  }
+/**
+ * main - prints its own opcodes
+ * @argc: number of args.
+ * @argv: array of args.
+ *
+ * Return: 0 (Success)
+ */
+int main(int argc, char *argv[])
+{
+	int j, i;
+	char *arr;
 
-  int num_bytes = atoi(argv[1]);
-  if (num_bytes < 0) {
-    printf("Error\n");
-    exit(2);
-  }
+	if (argc != 2)
+	{
+		printf("Error\n");
+		exit(1);
+	}
 
-  unsigned char* main_function_address = (unsigned char*)&main;
-  for (int i = 0; i < num_bytes; i++) {
-    printf("%02x", main_function_address[i]);
-  }
-  printf("\n");
+	j = atoi(argv[1]);
 
-  return 0;
+	if (j < 0)
+	{
+		printf("Error\n");
+		exit(2);
+	}
+
+	arr = (char *)main;
+
+	for (i = 0; i < bytes; i++)
+	{
+		if (i == bytes - 1)
+		{
+			printf("%02hhx\n", arr[i]);
+			break;
+		}
+		printf("%02hhx ", arr[i]);
+	}
+	return (0);
 }
