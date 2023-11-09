@@ -16,23 +16,15 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 	for (i = 0; i < n; i++)
 	{
-		x = va_arg(aloom, char*);
+		x = va_arg(aloom, char *);
 		if (!x)
-		{
 			x = "(nil)";
-		}
 		if (!separator)
-		{
 			printf("%s", x);
-		}
 		else if (separator && i == 0)
-		{
 			printf("%s", x);
-		}
 		else
-		{
 			printf(" %s%s", separator, x);
-		}
 	}
 	printf("\n");
 	va_end(aloom);
