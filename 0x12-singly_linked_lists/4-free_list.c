@@ -3,11 +3,11 @@
 /**
  * free_list - ajoefm
  * @head: rifoe
- * 
+ *
  * Return: kfmok
 */
 void free_list(list_t *head)
-  {
+{
 	if (head)
 	{
 		free_list(head->next);
@@ -15,4 +15,4 @@ void free_list(list_t *head)
 			free(head->str);
 		free(head);
 	}
-  }
+}
