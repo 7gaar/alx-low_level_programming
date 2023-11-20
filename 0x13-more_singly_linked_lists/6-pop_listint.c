@@ -1,15 +1,22 @@
 #include "lists.h"
 
+/**
+ * pop_listint - fhdjfh
+ * @head: jdkjfkd
+ *
+ * Return: jkdfhdj
+*/
 int pop_listint(listint_t **head)
 {
-	listint_t *start;
+	listint_t *tmp;
 	int n;
 
-	if (head == NULL || *head == NULL)
+	if (!head || !*head)
 		return (0);
-	start = *head;
-	*head = start->next;
-	n = start->n;
-	free(start);
+	n = (*head)->n;
+	tmp = (*head)->next;
+	free(*head);
+	*head = tmp;
+
 	return (n);
 }
