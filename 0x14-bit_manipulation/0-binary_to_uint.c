@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+ * binary_to_uint - a function that converts binary to int
+ * @b: fjfjf
+ * 
+ * Return: fjkdjdk
+*/
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int num, power;
