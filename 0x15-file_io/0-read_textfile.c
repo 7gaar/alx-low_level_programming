@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * reat_textfile - hfjdfh
+ * read_textfile - hfjdfh
  * @filename: kfjdf
  * @letters: kfjk
  *
