@@ -9,6 +9,7 @@ int cd(char **argv, int n, char *p_name)
 	int i;
 	char *home = NULL;
 
+	home = our_getenv("HOME");
 	if (home == NULL)
     {
 		perror("getenv");
@@ -16,7 +17,6 @@ int cd(char **argv, int n, char *p_name)
 	}
     if (argv[1] == NULL || (argv[1][0] == '-' && argv[1][1] == '\0'))
 	{
-		home = our_getenv("HOME");
 		i = chdir(home);
 		return(-1);
   	}
